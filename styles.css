@@ -1,0 +1,105 @@
+*{
+    margin: 2px;
+}
+
+body{
+    height: 100vh;
+}
+
+nav {
+    font-size: 2rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin: 0;
+    padding: 0.5rem; 
+    flex-grow: 1;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 2;
+    /* justify-content: space-around;  */
+}
+
+nav ul li {
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav ul li:hover {
+    background-color: grey;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav form {
+    flex-grow: 1;
+    align-items: self-end;
+    padding-left: 2rem;
+}
+
+nav form input{
+    border-radius: 0.2rem;
+    height: 2rem;
+    border: rgb(148, 146, 146);
+}
+
+nav form button {
+    background-color: blueviolet;
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.hero{
+    background-color: blueviolet;
+    color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+main {
+    background-color: #f1f1f1;
+    height: 50vh;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+main article{
+    padding: 5rem;
+    background-color: white;
+    flex: 1;
+}
+footer {
+    background-color: grey;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
