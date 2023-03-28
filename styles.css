@@ -3,7 +3,7 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 150vh; */
 }
 
 nav {
@@ -60,6 +60,7 @@ nav form input{
     border-radius: 0.2rem;
     height: 2rem;
     border: rgb(148, 146, 146);
+    padding: 0.5rem;
 }
 
 nav form button {
@@ -75,7 +76,7 @@ nav form button {
 .hero{
     background-color: blueviolet;
     color: white;
-    height: 40vh;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,17 +85,25 @@ nav form button {
 
 main {
     background-color: #f1f1f1;
-    height: 50vh;
+    /* height: 90vh; */
     padding: 0.5rem;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 400px);
+    gap: 1rem;
 
 }
-main article{
-    padding: 5rem;
+main figure{
+    padding: 1rem;
     background-color: white;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
+
+figure h2, figcaption {
+    order: 1;
+}
+
 footer {
     background-color: grey;
     height: 20vh;
